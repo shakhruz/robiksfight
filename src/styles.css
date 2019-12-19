@@ -632,3 +632,27 @@ h6 {
 .kolo-img:hover img {
   animation: bounce 1s;
 }
+
+h1 {
+  background-color: #0000003d;
+  border-radius: 10px;
+}
+
+.kolo-spec {
+  background-color: #0000003d;
+  border-radius: 20px;
+}
+
+.logo-container {
+  background-color: #0000003d;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+
+.kolo-name {
+  border-radius: 10px;
+  background-color: #0000003d;
+  margin: 10px;
+}

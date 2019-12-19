@@ -107,14 +107,14 @@
             <strong>{{ "KOLOBOK.GEN" | translate }}</strong
             >: {{ elem?.idata?.gen }}
           </div>
-          <div>
+          <!-- <div>
             <strong>{{ "KOLOBOK.GENOME" | translate }}</strong
             >: {{ elem?.idata?.genome?.slice(0, 10) }}...
-          </div>
-          <div>
+          </div> -->
+          <!-- <div>
             <strong>{{ "KOLOBOK.PARENTS" | translate }}</strong
             >: [{{ elem?.idata?.p1 }}, {{ elem?.idata?.p2 }}]
-          </div>
+          </div> -->
           <div *ngIf="elem?.mdata?.st === 3">
             <mat-form-field class="example-full-width kolo-new-name">
               <input
