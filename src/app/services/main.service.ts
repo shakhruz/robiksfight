@@ -66,7 +66,7 @@ export class MainService {
           .burn(
             this.loginEOSService.accountName,
             [item.id],
-            `burn Kolobok ${item.name} :(`,
+            `burn Robik ${item.name} :(`,
             this.loginEOSService.options
           )
           .then((result: any) => {
@@ -95,7 +95,7 @@ export class MainService {
           )
           .then(result => {
             console.log(result);
-            //this.router.navigate(['koloboks']);
+            //this.router.navigate(['robiks']);
             location.reload();
           })
           .catch(err => {

@@ -88,24 +88,23 @@
         </div>
         <div class="kolo-spec">
           <div>
-            <strong>{{ "KOLOBOK.ID" | translate }}</strong
-            >: {{ elem?.id }}
+            <strong>{{ "KOLOBOK.ID" | translate }}</strong>: {{ elem?.id }}
           </div>
           <div>
-            <strong>{{ "KOLOBOK.AGE" | translate }}</strong
-            >: {{ countAge(elem?.idata?.bdate) }}
+            <strong>{{ "KOLOBOK.AGE" | translate }}</strong>: {{
+            countAge(elem?.idata?.bdate) }}
           </div>
           <div>
-            <strong>{{ "KOLOBOK.HEALTH" | translate }}</strong> :
-            {{ elem?.mdata?.health }}
+            <strong>{{ "KOLOBOK.HEALTH" | translate }}</strong> : {{
+            elem?.mdata?.health }}
           </div>
           <div>
-            <strong>{{ "KOLOBOK.KIDS" | translate }}</strong
-            >: {{ elem?.mdata?.kids }}
+            <strong>{{ "KOLOBOK.KIDS" | translate }}</strong>: {{
+            elem?.mdata?.kids }}
           </div>
           <div>
-            <strong>{{ "KOLOBOK.GEN" | translate }}</strong
-            >: {{ elem?.idata?.gen }}
+            <strong>{{ "KOLOBOK.GEN" | translate }}</strong>: {{
+            elem?.idata?.gen }}
           </div>
           <!-- <div>
             <strong>{{ "KOLOBOK.GENOME" | translate }}</strong
@@ -149,7 +148,7 @@
         <div class="kolo-add">
           <button
             mat-raised-button
-            matTooltip="Sell Kolobok"
+            matTooltip="Sell Robik"
             class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large kolo-remove"
             (click)="burnKolobok(elem)"
           >

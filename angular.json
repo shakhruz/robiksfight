@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kolobok": {
+    "robiks": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -18,10 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.css",
               "node_modules/ngx-toasta/styles/style-material.css"
@@ -85,24 +82,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kolobok:build"
+            "browserTarget": "robiks:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kolobok:build:production"
+              "browserTarget": "robiks:build:production"
             },
             "jungle": {
-              "browserTarget": "kolobok:build:jungle"
+              "browserTarget": "robiks:build:jungle"
             },
             "meetone": {
-              "browserTarget": "kolobok:build:meetone"
+              "browserTarget": "robiks:build:meetone"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kolobok:build"
+            "browserTarget": "robiks:build"
           }
         },
         "test": {
@@ -117,27 +114,19 @@
               "node_modules/ngx-toasta/styles/style-material.css"
             ],
             "scripts": [],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
+            "assets": ["src/favicon.ico", "src/assets"]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     },
-    "kolobok-e2e": {
+    "robiks-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -145,17 +134,17 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kolobok:serve"
+            "devServerTarget": "robiks:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "kolobok:serve:production"
+              "devServerTarget": "robiks:serve:production"
             },
             "jungle": {
-              "devServerTarget": "kolobok:serve:jungle"
+              "devServerTarget": "robiks:serve:jungle"
             },
             "meetone": {
-              "devServerTarget": "kolobok:serve:meetone"
+              "devServerTarget": "robiks:serve:meetone"
             }
           }
         },
@@ -163,13 +152,11 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     }
   },
-  "defaultProject": "kolobok"
+  "defaultProject": "robiks"
 }
